@@ -1,0 +1,71 @@
+/* parametros de configuração inicial */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+/* estilização do header */
+
+header nav {
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    z-index: 10;
+}
+
+nav div{
+    width: 500px;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(27, 27, 27, 0.8);
+    font-size: 15px;
+    font-weight: 350;
+}
+
+/* dimensionamento da imagem cta */
+
+.cta, .cta img{
+    width: 100vw;
+    height: 98vh;
+    z-index: 9;
+}
+
+/* carroussel e cards destaque */
+
+.items-container{
+    margin: 1%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.destaques{
+    margin-top: 5%;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.destaques h1{
+    margin-bottom: 5%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}

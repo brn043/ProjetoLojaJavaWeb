@@ -35,6 +35,12 @@ nav a{
     font-weight: 350;
 }
 
+nav a:hover{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(27, 27, 27, 0.8);
+}
+
 /* dimensionamento da imagem cta */
 
 .cta, .cta img{

@@ -4,6 +4,11 @@
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    font-family: poppins, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* estilização do header */
@@ -25,44 +30,53 @@ nav div{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 50px;
+}
+
+nav .logo{
+    width: fit-content;
+    height: 12vh;
+    overflow: hidden;
+}
+
+.logo img{
+    margin-top: 12%;
+    width: max-content;
+    overflow: hidden;
+    height: 50vh;
 }
 
 nav a{
     text-decoration: none;
     color: rgba(27, 27, 27, 0.8);
     font-size: 15px;
-    font-weight: 350;
+    font-weight: 100;
 }
 
 nav a:hover{
     text-decoration: none;
-    font-weight: 500;
-    color: rgba(27, 27, 27, 0.8);
+    color: rgba(27, 27, 27, 0.5);
+    font-weight: 400;
 }
 
 /* dimensionamento da imagem cta */
 
+.main-container{
+    height: 100vh;
+}
+
 .cta, .cta img{
     width: 100vw;
-    height: 98vh;
+    height: 100vh;
     z-index: 9;
 }
 
 /* carroussel e cards destaque */
 
-.items-container{
-    margin: 1%;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .destaques{
     margin-top: 5%;
     width: 100vw;
-    height: auto;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,4 +88,11 @@ nav a:hover{
     width: auto;
     height: auto;
     overflow: hidden;
+}
+
+.carousel-inner #produto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
 }

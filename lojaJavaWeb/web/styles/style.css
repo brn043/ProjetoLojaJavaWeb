@@ -80,7 +80,7 @@ nav a:hover{
 .destaques{
     margin-top: 5%;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,13 +94,6 @@ nav a:hover{
     width: auto;
     height: auto;
     overflow: hidden;
-}
-
-.carousel-inner .produto{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 35px;
 }
 
 /* estilização do footer */

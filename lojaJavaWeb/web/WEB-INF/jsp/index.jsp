@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="styles/style.css" rel="stylesheet" type="text/css" />
-        <title>Home - LESS</title>
+        <title>LESS OFICIAL</title>
     </head>
 
     <body>
@@ -31,15 +31,16 @@
             </nav>
         </header>
         <main>
-            <div class="main-container">
+            <div class="main-container" id="main">
                 <div class="cta">
                     <img src="assets/cta-image.jpg" alt="" />
                 </div>
-                <div class="destaques">
+                <div class="destaques" id="destaques">
+                    <h1>DESTAQUES</h1>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div class="products" id="produto">
+                                <div class="products">
                                     <div class="card" style="width: 18rem;">
                                         <img class="card-img-top" src="..." alt="Card image cap">
                                         <div class="card-body">
@@ -64,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="products" id="produto">
+                                <div class="products">
                                     <div class="card" style="width: 18rem;">
                                         <img class="card-img-top" src="..." alt="Card image cap">
                                         <div class="card-body">
@@ -89,7 +90,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="products" id="produto">
+                                <div class="products">
                                     <div class="card" style="width: 18rem;">
                                         <img class="card-img-top" src="..." alt="Card image cap">
                                         <div class="card-body">
@@ -128,6 +129,30 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="footer-container">
+                <div class="infos">
+                    <p>
+                        LESS S.A © 2024.
+                        <br>
+                        todos os direitos reservados
+                        <br>
+                        Londrina, PR.
+                    </p>
+                </div>
+                <div class="contact">
+                </div>
+                <div class="credits">
+                    <p>
+                        Desenvolvido por:
+                        <br>
+                        Bruno de Souza Araujo
+                        <br>
+                        <a href=""><i class="fa-brands fa-instagram"></i> @brn.043</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

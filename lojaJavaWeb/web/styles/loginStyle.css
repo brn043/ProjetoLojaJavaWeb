@@ -1,0 +1,65 @@
+/* estilização do header */
+
+header nav {
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    z-index: 10;
+}
+
+nav div{
+    width: 500px;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .logo{
+    width: fit-content;
+    height: 12vh;
+    overflow: hidden;
+}
+
+.logo img{
+    margin-top: 12%;
+    width: max-content;
+    overflow: hidden;
+    height: 50vh;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(27, 27, 27, 0.8);
+    font-size: 15px;
+    font-weight: 100;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: rgba(27, 27, 27, 0.5);
+    font-weight: 400;
+}
+
+/* estilização pagina de login */
+main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-block{
+    display: block;
+}

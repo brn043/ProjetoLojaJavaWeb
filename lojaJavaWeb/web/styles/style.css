@@ -61,14 +61,18 @@ nav a:hover{
 
 /* dimensionamento da imagem cta */
 
-.main-container{
-    height: 100vh;
-}
-
 .cta, .cta img{
     width: 100vw;
     height: 100vh;
     z-index: 9;
+}
+
+#main{
+    scroll-snap-type: y mandatory;
+}
+
+#destaques{
+    scroll-snap-align: start;
 }
 
 /* carroussel e cards destaque */
@@ -81,6 +85,8 @@ nav a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 5%;
+    scroll-snap-align: center;
 }
 
 .destaques h1{
@@ -90,9 +96,41 @@ nav a:hover{
     overflow: hidden;
 }
 
-.carousel-inner #produto{
+.carousel-inner .produto{
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 35px;
+}
+
+/* estilização do footer */
+
+.footer{
+    width: 100vw;
+    height: 40vh;
+}
+
+.footer-container{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-container div{
+    height: auto;
+    width: 20%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.footer-container a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container p{
+    color: #fff;
 }

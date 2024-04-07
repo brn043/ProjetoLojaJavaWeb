@@ -3,10 +3,30 @@
 main{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
-.login-container{
-    width: 100vw;
+.main-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cover-image{
+    width: 50vw;
+    height: 100%;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.cover-image img{
+    width: 100%;
+    height: 100vh;
+}
+
+#signin-container{
+    width: 50vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,9 +34,54 @@ main{
     justify-content: center;
     background-color: #fff;
     background: linear-gradient(to right, #fff, #2727270c);
+    z-index: 8;
 }
 
-.login-container h1{
+#signup-container{
+    width: 50vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    background: linear-gradient(to right, #fff, #2727270c);
+    z-index: 8;
+}
+
+#signup-container.active{
+    display: flex;
+}
+
+#signin-container.toggle{
+    display: none;
+}
+
+@keyframes slideToRight{
+    to{
+        transform: translateY(100%);
+    }
+}
+
+#registerBtn{
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+
+#loginBtn{
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+
+#signin-container h1{
+    color: rgba(30,30,30);
+    font-weight: 20;
+    margin: 5%;
+}
+
+#signup-container h1{
     color: rgba(30,30,30);
     font-weight: 20;
     margin: 5%;

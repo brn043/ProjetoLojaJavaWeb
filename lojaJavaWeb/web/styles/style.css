@@ -109,7 +109,8 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(to-top, black, #050505);
+    background-color: black;
+    background: linear-gradient(to top, black, #101010);
 }
 
 .footer-container div{

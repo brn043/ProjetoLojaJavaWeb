@@ -1,7 +1,8 @@
 <% 
+    /*
     if(session.getAttribute("name") == null){
         response.sendRedirect("pages/login.html");
-    }
+    }*/
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -22,15 +23,15 @@
             <nav>
                 <div class="links-pages">
                     <a href="#">SHOP</a>
-                    <a href="#">CONTACT</a>
-                    <a href="#">ABOUT-US</a>
+                    <a href="#">CONTATO</a>
+                    <a href="#">SOBRE</a>
                 </div>
                 <div class="logo">
                     <a href=""><img src="assets/less-logo.png" alt=""></a>
                 </div>
                 <div class="links-user">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href="pages/login.html"><i class="fa-solid fa-user"></i></a>
                     <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </nav>

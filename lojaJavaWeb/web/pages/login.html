@@ -35,13 +35,13 @@
             </div>
             <div id="signin-container">
                 <h1>CONECTE-SE</h1>
-                <form action="LoginServlet" method="get">
+                <form action="<%=request.getContextPath()%>/login" method="post">
                     <p>Usuário: </p>
                     <input type="text" name="inUser" placeholder="Digite aqui"><br>
                     <p>Senha: </p>
                     <input type="password" name="inPassword" placeholder="Digite aqui"><br>
                     <h6>Não possui uma conta? <button type="button" id="registerBtn">Registre-se</button></h6><br>
-                    <button type="submit" name="signin" value="login">ENTRAR</button>
+                    <button type="submit">ENTRAR</button>
                 </form>
             </div>
             <div id="signup-container">

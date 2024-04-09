@@ -16,6 +16,14 @@
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>controller.LoginServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>controller.Controller</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>accountServlet</servlet-name>
+        <servlet-class>controller.accountServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -23,6 +31,14 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>accountServlet</servlet-name>
+        <url-pattern>/accountServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

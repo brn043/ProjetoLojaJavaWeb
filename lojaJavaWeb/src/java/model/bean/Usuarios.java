@@ -77,7 +77,4 @@ public class Usuarios {
         this.telefone = telefone;
     }
 
-    
-    
-    
 }

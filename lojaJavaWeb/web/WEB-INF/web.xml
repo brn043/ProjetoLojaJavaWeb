@@ -13,40 +13,49 @@
         <load-on-startup>2</load-on-startup>
     </servlet>
     <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>controller.LoginServlet</servlet-class>
+        <servlet-name>produtosController</servlet-name>
+        <servlet-class>controller.ProdutosController</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Controller</servlet-name>
-        <servlet-class>controller.Controller</servlet-class>
+        <servlet-name>contatoController</servlet-name>
+        <servlet-class>controller.ContatoController</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>accountServlet</servlet-name>
-        <servlet-class>controller.accountServlet</servlet-class>
+        <servlet-name>sobreController</servlet-name>
+        <servlet-class>controller.SobreController</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>accountController</servlet-name>
-        <servlet-class>controller.accountController</servlet-class>
+        <servlet-name>loginController</servlet-name>
+        <servlet-class>controller.LoginController</servlet-class>
+        <urlPatterns/>
+    </servlet>
+    <servlet>
+        <servlet-name>carrinhoController</servlet-name>
+        <servlet-class>controller.CarrinhoController</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
+        <servlet-name>produtosController</servlet-name>
+        <url-pattern>/produtosController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Controller</servlet-name>
-        <url-pattern>/Controller</url-pattern>
+        <servlet-name>contatoController</servlet-name>
+        <url-pattern>/contatoController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>accountServlet</servlet-name>
-        <url-pattern>/accountServlet</url-pattern>
+        <servlet-name>sobreController</servlet-name>
+        <url-pattern>/sobreController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>accountController</servlet-name>
-        <url-pattern>/accountController</url-pattern>
+        <servlet-name>loginController</servlet-name>
+        <url-pattern>/loginController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>carrinhoController</servlet-name>
+        <url-pattern>/carrinhoController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

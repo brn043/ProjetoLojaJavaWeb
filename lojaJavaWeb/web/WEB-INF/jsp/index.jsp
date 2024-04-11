@@ -22,17 +22,17 @@
         <header>
             <nav>
                 <div class="links-pages">
-                    <a href="#">SHOP</a>
-                    <a href="#">CONTATO</a>
-                    <a href="#">SOBRE</a>
+                    <a href="./produtosController">SHOP</a>
+                    <a href="./contatoController">CONTATO</a>
+                    <a href="./sobreController">SOBRE</a>
                 </div>
                 <div class="logo">
-                    <a href=""><img src="assets/less-logo.png" alt=""></a>
+                    <a href="#"><img src="assets/less-logo.png" alt=""></a>
                 </div>
                 <div class="links-user">
                     <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="pages/login.html"><i class="fa-solid fa-user"></i></a>
-                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="./loginController"><i class="fa-solid fa-user"></i></a>
+                    <a href="./carrinhoController"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </nav>
         </header>

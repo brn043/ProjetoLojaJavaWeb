@@ -8,14 +8,15 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-@WebServlet("/login")
-public class accountServlet extends HttpServlet {
+/**
+ *
+ * @author Bruno
+ */
+public class accountController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,10 +35,10 @@ public class accountServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet accountServlet</title>");            
+            out.println("<title>Servlet accountController</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Working!</h1>");
+            out.println("<h1>Servlet accountController at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -55,8 +56,6 @@ public class accountServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            PrintWriter out = response.getWriter();
-            out.print("Working!");
         processRequest(request, response);
     }
 

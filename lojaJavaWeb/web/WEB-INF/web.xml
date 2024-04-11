@@ -24,6 +24,10 @@
         <servlet-name>accountServlet</servlet-name>
         <servlet-class>controller.accountServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>accountController</servlet-name>
+        <servlet-class>controller.accountController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>accountServlet</servlet-name>
         <url-pattern>/accountServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>accountController</servlet-name>
+        <url-pattern>/accountController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

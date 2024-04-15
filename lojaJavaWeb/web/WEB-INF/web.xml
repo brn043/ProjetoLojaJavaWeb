@@ -17,6 +17,10 @@
         <servlet-class>controller.ProdutosController</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>indexController</servlet-name>
+        <servlet-class>controller.IndexController</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>contatoController</servlet-name>
         <servlet-class>controller.ContatoController</servlet-class>
     </servlet>
@@ -27,7 +31,6 @@
     <servlet>
         <servlet-name>loginController</servlet-name>
         <servlet-class>controller.LoginController</servlet-class>
-        <urlPatterns/>
     </servlet>
     <servlet>
         <servlet-name>carrinhoController</servlet-name>
@@ -36,6 +39,10 @@
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>indexController</servlet-name>
+        <url-pattern>/indexController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>produtosController</servlet-name>

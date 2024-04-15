@@ -5,36 +5,39 @@
  */
 package model.bean;
 
+import java.sql.Date;
+
 /**
  *
  * @author Bruno
  */
 public class Usuarios {
-    private int idUsuario;
+    private static int id_usuario;
     private String nome;
-    private String senha;
     private String email;
+    private String senha;
     private String cpf;
     private String telefone;
+    private Date dataNascimento;
 
     public Usuarios() {
     }
 
-    public Usuarios(int idUsuario, String nome, String senha, String email, String cpf, String telefone) {
-        this.idUsuario = idUsuario;
+    public Usuarios(String nome, String email, String senha, String cpf, String telefone, Date dataNascimento) {
         this.nome = nome;
-        this.senha = senha;
         this.email = email;
+        this.senha = senha;
         this.cpf = cpf;
         this.telefone = telefone;
+        this.dataNascimento = dataNascimento;
     }
 
-    public int getIdUsuario() {
-        return idUsuario;
+    public static int getId_usuario() {
+        return id_usuario;
     }
 
-    public void setIdUsuario(int idUsuario) {
-        this.idUsuario = idUsuario;
+    public static void setId_usuario(int id_usuario) {
+        Usuarios.id_usuario = id_usuario;
     }
 
     public String getNome() {
@@ -45,20 +48,20 @@ public class Usuarios {
         this.nome = nome;
     }
 
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
     public String getCpf() {
@@ -77,4 +80,12 @@ public class Usuarios {
         this.telefone = telefone;
     }
 
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+    
 }

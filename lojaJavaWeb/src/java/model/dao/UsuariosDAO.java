@@ -47,7 +47,9 @@ public class UsuariosDAO {
             PreparedStatement stmt = null;
             ResultSet rs = null;
 
-            stmt = conexao.prepareStatement("SELECT * FROM usarios WHERE email = ? AND senha = ?");
+            stmt = conexao.prepareStatement("SELECT * FROM usuarios WHERE email = ? AND senha = ?");
+            stmt.setString(1, user.getEmail());
+            stmt.setString(2, user.getSenha());
             rs = stmt.executeQuery();
 
             if (rs.next()) {

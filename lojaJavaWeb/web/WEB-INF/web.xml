@@ -62,7 +62,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>loginController</servlet-name>
-        <url-pattern>/sigin</url-pattern>
+        <url-pattern>/signin</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>loginController</servlet-name>

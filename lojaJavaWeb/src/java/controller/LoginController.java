@@ -97,7 +97,7 @@ public class LoginController extends HttpServlet {
             throws ServletException, IOException {
                         String url = request.getServletPath();
         if (url.equals("/signup")) {
-            String nextPage = "/WEB-INF/jsp/index.jsp";
+            String nextPage = "/WEB-INF/jsp/login.html";
             Usuarios user = new Usuarios();
             UsuariosDAO valida = new UsuariosDAO();
 
@@ -110,17 +110,9 @@ public class LoginController extends HttpServlet {
             user.setDataNascimento((Date.valueOf(data)));
 
             try {
-                valida.login(user);
-
-                if (valida.login(user) == true) {
-                    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
-                    dispatcher.forward(request, response);
-                } else {
-                    nextPage = "/WEB-INF/jsp/login.html";
-                    request.setAttribute("errorMessage", "Usuário ou senha inválidos");
-                    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
-                    dispatcher.forward(request, response);
-                }
+                valida.cadastrar(user);
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
+                dispatcher.forward(request, response);
             } catch (Exception e) {
                 nextPage = "/WEB-INF/jsp/login.html";
                 request.setAttribute("errorMessage", "Usuário ou senha inválidos");

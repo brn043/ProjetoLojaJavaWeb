@@ -61,6 +61,14 @@
         <url-pattern>/loginController</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>loginController</servlet-name>
+        <url-pattern>/sigin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginController</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>carrinhoController</servlet-name>
         <url-pattern>/carrinhoController</url-pattern>
     </servlet-mapping>

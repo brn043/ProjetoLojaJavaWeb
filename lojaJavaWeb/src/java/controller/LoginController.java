@@ -6,11 +6,14 @@
 package controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.bean.Usuarios;
+import model.dao.UsuariosDAO;
 
 /**
  *
@@ -30,7 +33,7 @@ public class LoginController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String nextPage = "/WEB-INF/jsp/login.html";
-        
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
         dispatcher.forward(request, response);
     }
@@ -47,7 +50,30 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        String url = request.getServletPath();
+
+        if (url.equals("/loginController")) {
+            processRequest(request, response);
+        }
+        if (url.equals("/signin")) {
+            Usuarios user = new Usuarios();
+            UsuariosDAO usuario = new UsuariosDAO();
+            user.setEmail(request.getParameter("inEmail"));
+            user.setSenha(request.getParameter("inPassword"));
+
+            if (usuario.login(user) == true) {
+                String nextPage = "/WEB-INF/jsp/produtos.html";
+
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
+                dispatcher.forward(request, response);
+            } else {
+                String nextPage = "/WEB-INF/jsp/login.html";
+
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
+                dispatcher.forward(request, response);
+            }
+        }
+
     }
 
     /**

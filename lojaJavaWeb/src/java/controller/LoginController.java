@@ -53,7 +53,7 @@ public class LoginController extends HttpServlet {
             throws ServletException, IOException {
                 String url = request.getServletPath();
         if (url.equals("/signin")) {
-            String nextPage = "/WEB-INF/jsp/index.jsp";
+            String nextPage = "/WEB-INF/jsp/produtos.html";
             Usuarios user = new Usuarios();
             UsuariosDAO valida = new UsuariosDAO();
 

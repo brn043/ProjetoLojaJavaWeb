@@ -1,4 +1,6 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
 <html lang="pt-br">
 
     <head>
@@ -33,10 +35,14 @@
                     <h1>Nossos Produtos</h1>
                 </div>
                 <div class="products-container">
-                    <div class="card">
-                        <img src="... alt=">
-                        <button><i class="fa-solid fa-plus"></i></button>
-                    </div>
+                    <c:forEach items="${produtos}" var="produto">
+                        <div class="card">
+                            <img src="... alt="">
+                            <span>${produto.nome}</span>
+                            <span>${produto.preco}</span>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </c:forEach>
                 </div>
             </div>
         </main>

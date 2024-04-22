@@ -7,11 +7,14 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.bean.Carrinho;
+import model.dao.CarrinhoDAO;
 
 /**
  *
@@ -30,7 +33,11 @@ public class CarrinhoController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nextPage = "/WEB-INF/jsp/carrinho.html";
+        String nextPage = "/WEB-INF/jsp/carrinho.jsp";
+        
+        CarrinhoDAO carrinhodao = new CarrinhoDAO();
+        List<Carrinho> carrinho = carrinhodao.listarCarrinho();
+        request.setAttribute("carrinho", carrinho);
         
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextPage);
         dispatcher.forward(request, response);

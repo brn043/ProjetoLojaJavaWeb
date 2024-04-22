@@ -23,7 +23,6 @@
             <nav>
                 <div class="links-pages">
                     <a href="./produtosController">SHOP</a>
-                    <a href="./contatoController">CONTATO</a>
                     <a href="./sobreController">SOBRE</a>
                 </div>
                 <div class="logo">
@@ -40,10 +39,6 @@
             <div class="main-container" id="main">
                 <div class="cta">
                     <img src="assets/cta-image.jpg" alt="" />
-                </div>
-                <div class="destaques">
-                    <h1>DESTAQUES</h1>
-                    
                 </div>
             </div>
         </main>

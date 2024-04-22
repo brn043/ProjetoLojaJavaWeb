@@ -36,7 +36,7 @@ public class ProdutosDAO {
                 produto.setNome(rs.getString("nome"));
                 produto.setCategoria(rs.getString("categoria"));
                 produto.setQuantidade(rs.getInt("quantidade"));
-                produto.setPreco(rs.getFloat("preço"));
+                produto.setPreco(rs.getFloat("preco"));
                 produtos.add(produto);
             }
             rs.close();

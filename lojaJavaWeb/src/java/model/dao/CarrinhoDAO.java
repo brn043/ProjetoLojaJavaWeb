@@ -29,15 +29,14 @@ public class CarrinhoDAO {
             PreparedStatement stmt = null;
             ResultSet rs = null;
 
-            stmt = conexao.prepareStatement("SELECT * FROM carrinho WHERE id_cliente = ?");
-            stmt.setInt(1, Usuarios.getId_usuario());
+            stmt = conexao.prepareStatement("SELECT * FROM carrinho");
             rs = stmt.executeQuery();
 
             while (rs.next()) {
                 Carrinho produto = new Carrinho();
                 produto.setImg(rs.getByte("image"));
                 produto.setProduto(rs.getString("produto"));
-                produto.setPreco(rs.getFloat("preço"));
+                produto.setPreco(rs.getFloat("preco"));
                 produto.setQuantidade(rs.getInt("quantidade"));
                 produto.setTotal(rs.getFloat("total"));                
 
